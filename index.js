@@ -5,7 +5,7 @@ import Shop from "./Shop.js"
 import Good from "./Good.js"
 import cors from "cors"
 
-const PORT = 5000
+const PORT = process.env.PORT || 5000
 const DB_URL = "mongodb+srv://root:root@cluster0.y0cub.mongodb.net/?retryWrites=true&w=majority"
 const app = express()
 app.use(express.json())
